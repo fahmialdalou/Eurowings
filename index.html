@@ -70,7 +70,7 @@
 		<ul v-if = "responseAvailable == true" class="imgur_gallery">
 			<li v-for="(result,key) in filteredResults" :key="result.id" class="image_item">
 				<div class="image_item_wrp">
-					<img class="lazy" src="img/loading.gif" v-bind:alt="result.title" v-bind:data-src="result.images[0].link" @click="activeImage" />
+					<img class="lazy" v-bind:alt="result.title" v-bind:data-src="result.images[0].link" @click="activeImage" />
 					<div class="imgur_info">
 						<h2>{{result.title}}</h2>
 						<p class="meta_data"><span>Up votes:{{result.ups }} </span><span> Down votes:{{result.downs }}</span><span> Score:{{result.score}}</span></p>
