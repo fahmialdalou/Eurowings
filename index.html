@@ -79,7 +79,7 @@
 					
 				</div>
 				<a href="javascript:;" @click="closeImage" class="close_btn">CLOSE</a>
-				<span v-if="key == Object.keys(result).length">{{lazyloader()}}</span>
+				<span v-if="key == Object.keys(filteredResults).length">{{lazyloader()}}</span>
 			</li>
 		</ul>
 	</main>
